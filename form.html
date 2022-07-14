@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html Label</title>
+    <style >
+         ::selection {background-color: green;}
+    </style>
+</head>
+<body>
+ <form autocomplete="on">
+
+	 <!--This is personal info person visiting websie-->
+  <fieldset>
+		<legend>Personal Info</legend>
+
+	<label  for="name1">Name:</label>
+	<input type='text' id="name1" name="hello" value="Utkarsh Kumar" maxlength="14" placeholder="YourName"  readonly> <br><br>
+	<label for="pass">Password:</label>
+	<input type="password" name="pass" id="pass" placeholder="u@k@1234"  ><br><br>
+	<label for="mail">Email:</label>
+	<input type="email" name="email" id="label" placeholder="youremailid@email.com"  autofocus> <br><br>
+  <label for="te">Teliphone  Number:</label>
+  <input type="tel" name="tel" id="te" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-4569">
+</fieldset >
+    <br><br>
+		<!--This is a dropdownlist in the form -->
+  <label for="hello">Dropdown list:</label>
+    <select size="3" id="hello"  >
+    	<option>Hello1</option>
+    	<option>Hello2</option>
+    	<option>Hello3</option>
+			<option>Hello4</option>
+			<option label="Hello55">Hello5 How are you!</option>
+			<option>Hello6</option>
+			<option selected>Hello7</option>
+			<option disabled>Hello8</option>
+			<option value="Hello99">Hello9</option>
+			<option>Hello10</option>
+			<option>Hello11</option>
+			<option>Hello12</option>
+			<option>Hello13</option>
+			<option>Hello14</option>
+    </select><br><br>
+  <span>What is your gender?</span><br>
+    <label for="male">Male</label>
+    	<input type="checkbox" id="male" name="check" ><br>
+    <label for="female">Female  </label>
+		 <input type="checkbox" id="female">
+  <br><br><br>
+
+    <span>Favourite color </span><br>
+		<label for="blu">Blue:<label>
+			<input type="radio" name="blue" value="Blue" id="blu"><br>
+    <label for="red1">Red:</label>
+		<input type="radio" name="red" value="Red" id="red1">
+        <br><br>
+    <label for="alert1">Welcome to Form: </label><br>
+    <input type="button" name="buton" value="Click Me" id="alert1" size="10" onclick="alert('welcome to html5')">
+    <br><br>
+
+    <label for="num">Age:</label>
+    <input type="number" name="num" min="13" max="70" id="num" required><br><br>
+    <label for="d">Date of Birth:</label>
+    <input type='date' id="d" min="2000-01-01" max="2022-06-17">
+    <br><br>
+    <label for="dt">DateTime</label>
+    <input type="datetime-local" id="dt">
+    <br><br>
+    <label for="we">Week:</label>
+    <input type="week" id="we">
+    <br><br>
+    <label for="mon">Month:</label>
+    <input type="month" name="mon" id="mon">
+    <br><br>
+    <label for="ti">Time: </label>
+    <input type="time" name="time" id="ti">
+    <br><br>
+    <label for="ran">Price Range: 0</label>
+    <input type="range" id="ran" min="0" max="500" step="50">
+    <label for="ran">500</label>
+    <br><br>
+    <label for=fi>uploadfile</label>
+    <input type="file" id="fi" multiple>
+    <br><br>
+    <label for=cp>Color picker </label>
+    <input type="color" name="">
+    <br><br>
+    <label>Reset</label>
+    <input type=reset>
+    <br><br>
+   <input type="submit" name="submit" value="SUBMIT"><br>
+
+  </form>
+</body>
+</html>
